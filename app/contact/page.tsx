@@ -132,7 +132,7 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our sales team
+            Contact our  team
           </div>
           <div
             className="
@@ -141,27 +141,39 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+           Ready to boost your OnlyFans earnings? <br/>
+           Fill out the form below,<br/>
+            and one of our experts will get in touch with you shortly. <br/>
+            We're here to help you every step of the way.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate.
+              A Flexible Agency for Your OnlyFans Success<br/>
+              Our agency is here to provide you with the tools,<br/>
+               support, and strategies to grow your OnlyFans account. <br/>
+               We collaborate with you to share knowledge,<br/>
+                execute tailored projects, and unlock your full earning potential.
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                Enterprise features to securely manage user access and security.
+              Enterprise-Level Support for Your OnlyFans Account With our expert team,<br/>
+               you’ll have everything you need to safely manage your account,<br/>
+                grow your fanbase, and maximize your income.
+
+
               </div>
             </div>
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-                Dedicated support to work with you on your setup and help you
-                build the best plan for your company.
+              Personalized Strategy to Build Your Success<br/>
+               Our dedicated experts will work closely with you to create<br/>
+                a custom growth plan that suits your goals, <br/>
+                providing continuous support and optimizing your OnlyFans experience.
               </div>
             </div>
           </div>
@@ -197,7 +209,7 @@ export default function ContactForm() {
                   )}
                 />
 
-                <FormField
+                {/* <FormField
                   control={form.control}
                   name="last_name"
                   render={({ field }) => (
@@ -210,7 +222,7 @@ export default function ContactForm() {
                       </FormControl>
                     </FormItem>
                   )}
-                />
+                /> */}
               </div>
 
               <FormField
@@ -234,7 +246,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Company name?
+                    Phone number (optional)
                     </FormLabel>
                     <FormControl>
                       <Input {...field} />
@@ -243,7 +255,7 @@ export default function ContactForm() {
                 )}
               />
 
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="services"
                 render={({ field }) => (
@@ -274,9 +286,9 @@ export default function ContactForm() {
                     </Select>
                   </FormItem>
                 )}
-              />
+              /> */}
 
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="help"
                 render={({ field }) => (
@@ -310,7 +322,7 @@ export default function ContactForm() {
                     </Select>
                   </FormItem>
                 )}
-              />
+              /> */}
 
               <FormField
                 control={form.control}
@@ -318,7 +330,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Anything else ?
+                      Message
                     </FormLabel>
                     <FormControl>
                       <Textarea style={{ height: "100px" }} {...field} />
@@ -339,10 +351,7 @@ export default function ContactForm() {
                 "
                   />
                 </div>
-                <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
-                </div>
+             
               </div>
 
               <div className="flex items-center gap-4">
