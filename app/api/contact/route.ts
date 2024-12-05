@@ -31,7 +31,7 @@ export async function POST(req: Request) {
 
       const mailOptions = {
         from: email,
-        to: "tomek28611@gmail.com",
+        to: "tomek28611@gmail.com, autodilykr@gmail.com",
         subject: "Prośba o kontakt z OnlyFans Expert",
         html: `
                     <h1>Prośba o kontakt z OnlyFans Expert</h1>
