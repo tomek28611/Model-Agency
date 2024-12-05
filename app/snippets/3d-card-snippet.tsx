@@ -22,12 +22,12 @@ export function ThreeDCardExample() {
           With years of experience in the industry, we ve helped countless models achieve financial success, turning their hard work into substantial earnings
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <Image
+          <img
             src="/images/woman.png"
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
+            alt="woman"
           />
         </CardItem>
         <div className="flex justify-between items-center mt-20">
