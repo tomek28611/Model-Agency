@@ -48,7 +48,7 @@ This is an example account statement and the minimum amount that our experienced
               className="flex flex-col items-center justify-center mt-10 md:w-2/3 mx-auto"
             >
               <div className="flex flex-col items-center justify-center ">
-                <Image
+                <img
                   src={store.image}
                   alt="shopify store"
                   width={400}
