@@ -144,7 +144,7 @@ export default function ContactForm() {
            Ready to boost your OnlyFans earnings? <br/>
            Fill out the form below,<br/>
             and one of our experts will get in touch with you shortly. <br/>
-            We're here to help you every step of the way.
+            We re here to help you every step of the way.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
