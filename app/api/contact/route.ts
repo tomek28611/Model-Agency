@@ -24,24 +24,24 @@ export async function POST(req: Request) {
         port: 465,
         secure: true,
         auth: {
-          user: "tasicigor123@gmail.com",
-          pass: "bsel kcxt drvb srcx",
+          user: "autodilyobchod@gmail.com",
+          pass: process.env.EMAIL_PASSWORD,  
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "tasicigor123@gmail.com",
-        subject: "Contact Form Submission",
+        to: "tomek28611@gmail.com",
+        subject: "Prośba o kontakt z OnlyFans Expert",
         html: `
-                    <h1>Contact Form</h1>
+                    <h1>Prośba o kontakt z OnlyFans Expert</h1>
                     <p>First Name: ${first_name}</p>
-                    <p>Last Name: ${last_name}</p>
+                    
                     <p>Work Email: ${email}</p>
                 
-                    <p>Company Name: ${company_name}</p>
-                    <p>Company Size: ${company_size}</p>
-                    <p>Help: ${help}</p>
+                    <p>Phone: ${company_name}</p>
+                   
+                  
                 
                     <p>Info: ${info}</p>
                 `,

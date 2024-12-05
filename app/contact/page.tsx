@@ -37,6 +37,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
 import { PiCheckLight, PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 const FormSchema = z.object({
   first_name: z.string(),
@@ -68,11 +69,11 @@ type FormValues = {
   company_name: string;
   help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
   services:
-    | "Mobile App Develoment"
-    | "Social Media Marketing"
-    | "UI/UX Design"
-    | "Branding"
-    | "Website Development";
+  | "Mobile App Develoment"
+  | "Social Media Marketing"
+  | "UI/UX Design"
+  | "Branding"
+  | "Website Development";
   info: string;
   terms: boolean;
 };
@@ -123,12 +124,13 @@ export default function ContactForm() {
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar
-        scrollToWebsiteDesign={() => {}}
-        scrollToGraphicDesign={() => {}}
-        scrollToShopifyStores={() => {}}
-        scrollToBrands={() => {}}
-        scrollToServices={() => {}}
+        scrollToWebsiteDesign={() => { }}
+        scrollToGraphicDesign={() => { }}
+        scrollToShopifyStores={() => { }}
+        scrollToBrands={() => { }}
+        scrollToServices={() => { }}
       />
+
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -141,27 +143,40 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-           Ready to boost your OnlyFans earnings? <br/>
-           Fill out the form below,<br/>
-            and one of our experts will get in touch with you shortly. <br/>
-            We re here to help you every step of the way.
+            Ready to boost your OnlyFans earnings? <br />
+            Fill out the form below,<br />
+            and one of our experts will get in touch with you shortly. <br />
+            We re here to help you every step of the way.<br /><br />
+            You can write a message on Instagram or fill out a survey<br /><br />
+            <Link href="https://www.instagram.com/onlyfanexperts/" className="flex ">
+              <img
+                src="/instagram.png"
+                height="50"
+                width="50"
+                className="h-10 w-10 object-cover rounded-xl group-hover/card:shadow-xl mr-2"
+                alt="woman"
+              />
+              <div className="mt-2">
+                https://www.instagram.com/onlyfanexperts/
+              </div>
+            </Link>
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-              A Flexible Agency for Your OnlyFans Success<br/>
-              Our agency is here to provide you with the tools,<br/>
-               support, and strategies to grow your OnlyFans account. <br/>
-               We collaborate with you to share knowledge,<br/>
+                A Flexible Agency for Your OnlyFans Success<br />
+                Our agency is here to provide you with the tools,<br />
+                support, and strategies to grow your OnlyFans account. <br />
+                We collaborate with you to share knowledge,<br />
                 execute tailored projects, and unlock your full earning potential.
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-              Enterprise-Level Support for Your OnlyFans Account With our expert team,<br/>
-               you’ll have everything you need to safely manage your account,<br/>
+                Enterprise-Level Support for Your OnlyFans Account With our expert team,<br />
+                you’ll have everything you need to safely manage your account,<br />
                 grow your fanbase, and maximize your income.
 
 
@@ -170,9 +185,9 @@ export default function ContactForm() {
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-              Personalized Strategy to Build Your Success<br/>
-               Our dedicated experts will work closely with you to create<br/>
-                a custom growth plan that suits your goals, <br/>
+                Personalized Strategy to Build Your Success<br />
+                Our dedicated experts will work closely with you to create<br />
+                a custom growth plan that suits your goals, <br />
                 providing continuous support and optimizing your OnlyFans experience.
               </div>
             </div>
@@ -193,14 +208,14 @@ export default function ContactForm() {
                      
                         "
             >
-              <div className="md:flex items-center gap-6 ">
+              <div className="md:flex items-center gap-6  ">
                 <FormField
                   control={form.control}
                   name="first_name"
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        First name *
+                        Your name *
                       </FormLabel>
                       <FormControl>
                         <Input {...field} />
@@ -246,7 +261,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                    Phone number (optional)
+                      Phone number (optional)
                     </FormLabel>
                     <FormControl>
                       <Input {...field} />
@@ -351,7 +366,7 @@ export default function ContactForm() {
                 "
                   />
                 </div>
-             
+
               </div>
 
               <div className="flex items-center gap-4">
