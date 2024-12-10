@@ -38,7 +38,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }
         </Link>
 
         <Link href="/contact" className="text-black text-2xl">
-          Book a call
+          Book a call ...
         </Link>
 
         {/* Add onClick handler to Services link */}
