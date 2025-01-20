@@ -2,10 +2,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AlignJustify, X } from "lucide-react";
-
+import GoogleTranslate from '@/components/GoogleTranslate';
 import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
+import LangSelector from '@/components/ui/LanguageSelector';
 
 interface NavbarProps {
   scrollToWebsiteDesign: () => void;
@@ -94,8 +95,22 @@ const Navbar = ({
             />
           )}
         </div>
-
+        {/* <GoogleTranslate /> */}
+        {/* <LangSelector /> */}
         <div className="hidden md:flex">
+        <Link
+            href="/job"
+            className="mr-2
+            inline-flex h-12 animate-shimmer items-center justify-center 
+            rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
+            bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors
+             focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
+              focus:ring-offset-slate-50
+
+            "
+          >
+            Job offer
+          </Link>
           <Link
             href="/contact"
             className="
@@ -110,6 +125,7 @@ const Navbar = ({
             Contact
           </Link>
         </div>
+       
       </div>
     </div>
   );
