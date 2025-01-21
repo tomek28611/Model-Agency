@@ -18,6 +18,10 @@ const JobOffer = () => {
     };
   return (
     <div className="bg-slate-100 text-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto mt-10">
+        <div className="bg-slate-200 p-4 rounded-2xl text-center mb-4">
+                WhatsApp: +420 606 400 968 <br />
+                Instagram: nerozza_modeling_agency
+            </div>
        <div className="flex justify-end mb-4">
                 <select
                     value={selectedLanguage}
@@ -57,7 +61,7 @@ const JobOffer = () => {
         Oferta pracy dla modelki OnlyFans
       </h1>
       <p className="text-lg text-center mb-6">
-        <strong>Zarabiaj nawet 100 000 zł miesięcznie!</strong>
+        <strong>Zarabiaj nawet 50 000 zł miesięcznie!</strong>
       </p>
       <div className="space-y-6">
         <section>
