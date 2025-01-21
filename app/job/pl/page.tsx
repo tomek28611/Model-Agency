@@ -30,7 +30,7 @@ const JobOffer = () => {
                 </select>
 
                 <Link
-                    href={languageLinks[selectedLanguage]} // Link z dynamicznie wybranym językiem
+                    href={languageLinks[selectedLanguage]} 
                     className="
            p-2 rounded border border-gray-300 bg-white text-gray-800
           "
