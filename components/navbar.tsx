@@ -6,7 +6,13 @@ import GoogleTranslate from '@/components/GoogleTranslate';
 import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
-import LangSelector from '@/components/ui/LanguageSelector';
+import i18n from "../i18n";
+import "../i18n";
+import { I18nextProvider } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import { Gb, Cz, De, Pl } from "react-flags-select";
+import '../styles/globals.css';
+import { t } from "i18next";
 
 interface NavbarProps {
   scrollToWebsiteDesign: () => void;
@@ -27,7 +33,7 @@ const Navbar = ({
 
   const toggleDropDown = () => {
     setIsDropDownVisible(!isDropDownVisible);
-  };
+  }; 
 
   const closeDropDown = () => {
     setIsDropDownVisible(false);
@@ -95,8 +101,39 @@ const Navbar = ({
             />
           )}
         </div>
-        {/* <GoogleTranslate /> */}
-        {/* <LangSelector /> */}
+        <div>
+            <div className="col-md-6 text-center">
+              <div className="flags flex  cursor-pointer items-center">
+                <div>
+                  <div onClick={() => i18n.changeLanguage("en")} className="">
+                    <Gb className="flag" />
+                  </div>
+
+                </div>
+                <div>
+                  <div onClick={() => i18n.changeLanguage("cz")} className="">
+                    <Cz className="flag" />
+                  </div>
+
+                </div>
+                {/* <div>
+                  <div onClick={() => i18n.changeLanguage("de")} className="">
+                    <De className="flag" />
+                  </div>
+
+                </div> */}
+                <div>
+                  <div onClick={() => i18n.changeLanguage("pl")} className="">
+                    <Pl className="flag" />
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
         <div className="hidden md:flex">
         <Link
             href="/job"
@@ -109,7 +146,7 @@ const Navbar = ({
 
             "
           >
-            Job offer
+            {t('jo')}
           </Link>
           <Link
             href="/contact"

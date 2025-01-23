@@ -8,6 +8,12 @@ import { MdContentPaste } from "react-icons/md";
 import { GiLovers } from "react-icons/gi";
 import { GrUserExpert } from "react-icons/gr";
 import { IoCashOutline } from "react-icons/io5";
+import i18n from "../i18n";
+import "../i18n";
+import { I18nextProvider } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import { Gb, Cz, De, Pl } from "react-flags-select";
+import '../styles/globals.css';
 
 
 export const projects = [
@@ -56,14 +62,15 @@ export const projects = [
 ];
 
 const WebsiteDesign = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className="text-white">
             <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
                 <div className="text-4xl  md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-                    Why do top models <br /> need an Agency ?
+                   {t('bs1')} <br /> {t('bs2')}
                 </div>
                 <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-                We empower you with the tools and support to realize your dreams more quickly
+                {t('b3')}
                 </p>
             </div>
 

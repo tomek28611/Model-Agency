@@ -1,0 +1,48 @@
+.flag {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+
+@media (max-width: 269px) and (min-width: 200px) {
+    .flag {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+}
+
+@media (max-width: 380px) and (min-width: 270px) {
+    .flag {
+        width: 40px;
+        height: 35px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+}
+
+@media (max-width: 800px) and (min-width: 381px) {
+    .flag {
+        width: 70px;
+        height: 60px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+}
+
+
+.flag:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
