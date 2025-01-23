@@ -71,8 +71,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
           <title>Expert OnlyFans Management | Maximize Your Earnings </title>
           <meta name="description" content="Start earning big on OnlyFans with our expert management. We help you grow your fanbase, boost your earnings, and build your brand" />
-          <link rel="cannonical" href="https://model-agency-mauve.vercel.app/" />
-          <link rel="apple-touch-icon" sizes="180x180" href="https://www.nahradni-dily.com/logo-nerozza.png" />
+          <link rel="cannonical" href="https://www.of-modelagency.pl/" />
+          <link rel="apple-touch-icon" sizes="180x180" href="https://www.of-modelagency.pl/images/3.jpg" />
           <meta property="og:locale" content="en" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Start earning big on OnlyFans with our expert management. We help you grow your fanbase, boost your earnings, and build your brand" />
@@ -86,7 +86,7 @@ export default function Home() {
           <meta property="og:site_name" content="Expert OnlyFans Management" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Start earning big on OnlyFans with our expert management. We help you grow your fanbase, boost your earnings, and build your brand" />
-          <meta name="twitter:image" content="https://www.nahradni-dily.com/logo-nerozza.png" />
+          <meta name="twitter:image" content="https://www.of-modelagency.pl/images/3.jpg" />
           <meta name="twitter:image:alt" content="Start earning big on OnlyFans with our expert management. We help you grow your fanbase, boost your earnings, and build your brand"></meta>
           <meta name="twitter:description" content="Start earning big on OnlyFans with our expert management. We help you grow your fanbase, boost your earnings, and build your brand"></meta>
 
