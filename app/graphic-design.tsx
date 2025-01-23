@@ -3,16 +3,19 @@
 import { motion } from "framer-motion";
 import { ThreeDCardExample } from "./snippets/3d-card-snippet";
 import { EvervaultCardSnippet } from "./snippets/evervault-card-snippet";
+import { useTranslation } from "react-i18next";
 
 const GraphicDesign = () => {
+  const { t } = useTranslation();
     return ( <div>
        <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
       <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-      We are <br /> OnlyFans experts <br/> Try us for FREE !!!
+      {/* We are <br /> OnlyFans experts <br/> Try us for FREE !!! */}
+      {t('we_are_experts')}
       </div>
 
       <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
-      You can try our services for free – at the beginning of our partnership, we don’t take any commission, allowing you to experience our support with no risk.
+      {t('try_services')}
       </p>
       <div className="items-center md:flex justify-center md:mx-auto md:space-x-10">
       <motion.div
@@ -22,16 +25,6 @@ const GraphicDesign = () => {
           >
            <ThreeDCardExample />
             </motion.div>
-
-            
-
-            {/* <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            className="px-10 md:px-0"
-          >
-           <EvervaultCardSnippet />
-            </motion.div> */}
 
       </div>
 

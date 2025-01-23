@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslation } from 'react-i18next';
 
 const stores = [
   {
@@ -24,6 +25,7 @@ const stores = [
 ];
 
 const ShopifyStores = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section
       className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
@@ -33,13 +35,11 @@ const ShopifyStores = () => {
     >
       <div className=" p-4   mx-auto relative z-10  w-full ">
         <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-        Results of our models <br />
+        {t('results')} <br />
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-        Due to high discretion, we do not show the data of our models.
-
-This is an example account statement and the minimum amount that our experienced models earn
+       {t('results_d')}
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
