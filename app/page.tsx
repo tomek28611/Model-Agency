@@ -59,7 +59,7 @@ export default function Home() {
     brandsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Function to scroll to Services section
+
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: "smooth" });
   };

@@ -5,7 +5,7 @@ i18next.use(initReactI18next).init({
     debug: true,
     fallbackLng: 'en',
     interpolation: {
-        escapeValue: false, // React already escapes by default
+        escapeValue: false,
     },
     resources: {
         en: {
@@ -23,11 +23,11 @@ i18next.use(initReactI18next).init({
                 k1_desc: "Without having to be online all the time. Relax and watch your profits grow.",
                 k2_desc: "Our team guarantees exponential growth and lasting popularity for your brand.",
                 k3: "Always with you",
-                k3_desc: "You're part of the family, and we're here to support you every step of the way!",
+                k3_desc: "You re part of the family, and we re here to support you every step of the way!",
                 k4: "With years of industry experience",
                 k4_desc: "We provide strategies that accelerate your success.",
                 k5: "Expertise in marketing and management",
-                k5_desc: "We'll help you maximize your earnings on OnlyFans.",
+                k5_desc: "We ll help you maximize your earnings on OnlyFans.",
                 k6: "Want to make real money?",
                 k6_desc: "We provide you with the tools and strategies to turn your content into high earnings.",
                 we_are_experts: "We are OnlyFans experts. Try us for FREE!!!",
@@ -35,6 +35,71 @@ i18next.use(initReactI18next).init({
                 mov_w: "With years of experience in the industry, we ve helped countless models achieve financial success, turning their hard work into substantial earnings",
                 results: "Results of our models",
                 results_d: "Due to high discretion, we do not show the data of our models. This is an example account statement and the minimum amount that our experienced models earn",
+                faq_title: "Have questions?",
+                faq_subtitle: "Get answers.",
+                faq_free: "Can I check you out for free?",
+                faq_free_desc_1: "YES! We don t charge a commission for the first period, only when you start earning well will we share the profit.",
+                faq_free_desc_2: "So you don t put any money in.",
+                faq_free_desc_3: " We are the ones who invest in you at the beginning.",
+                faq_how_to_start: "How to start?",
+                faq_how_to_start_desc_1: "We are happy to hear that!",
+                faq_how_to_start_desc_2: "Before we decide to work with you, we would like to get to know you. What is your motivation, do you have enough time and do you really want it. We want to know how we can best help you.",
+                faq_how_to_start_desc_3: "To check all this we have a free initial consultation.",
+                faq_how_to_start_desc_4: "Just book an initial call and we can get started.",
+                faq_nude_photos: "What if I don t want to show nude photos?",
+                faq_nude_photos_desc_1: "It s your decision how far you want to go.",
+                faq_nude_photos_desc_2: "At the beginning, regular or erotic photos are sufficient.",
+                faq_nude_photos_desc_3: "Fans prefer more exclusive content, but it s not required.",
+                faq_what_we_offer: "What can we offer you?",
+                faq_offer_strategy: "Viral strategy",
+                faq_offer_support: "24/7 fan support",
+                faq_offer_management: "OnlyFans account management",
+                faq_offer_growth_strategy: "Account growth strategy",
+                faq_offer_consulting: "Social media consulting",
+                faq_offer_audit: "Weekly account audit",
+                faq_offer_content: "Content management",
+                faq_offer_ai_crm: "AI-powered fan relationship management",
+                faq_offer_acquisition: "Fan acquisition",
+                faq_offer_creation_help: "Content creation support",
+                faq_offer_academy: "OnlyFans Academy",
+
+                contact_title: "Contact our team",
+                contact_intro_line1: "Ready to boost your OnlyFans earnings?",
+                contact_intro_line2: "Fill out the form below,",
+                contact_intro_line3: "and one of our experts will get in touch with you shortly.",
+                contact_intro_line4: "We re here to help you every step of the way.",
+
+                contact_instagram_info: "You can write a message on Instagram or fill out a survey",
+                contact_instagram_link: "https://www.instagram.com/onlyfanexperts/",
+
+                contact_flexible_agency: "A Flexible Agency for Your OnlyFans Success",
+                contact_flexible_agency_desc_line1: "Our agency is here to provide you with the tools,",
+                contact_flexible_agency_desc_line2: "support, and strategies to grow your OnlyFans account.",
+                contact_flexible_agency_desc_line3: "We collaborate with you to share knowledge,",
+                contact_flexible_agency_desc_line4: "execute tailored projects,",
+                contact_flexible_agency_desc_line5: "and unlock your full earning potential."
+                ,
+                contact_enterprise_support: "Enterprise-Level Support for Your OnlyFans Account",
+                contact_enterprise_support_desc_line1: "With our expert team, you’ll have everything you need to safely manage your account,",
+                contact_enterprise_support_desc_line2: "grow your fanbase, and maximize your income.",
+
+                contact_personalized_strategy: "Personalized Strategy to Build Your Success",
+                contact_personalized_strategy_desc_line1: "Our dedicated experts will work closely with you",
+                contact_personalized_strategy_desc_line2: "to create a custom growth plan that suits your goals",
+                contact_personalized_strategy_desc_line3: "providing continuous support",
+                contact_personalized_strategy_desc_line4: "and optimizing your OnlyFans experience.",
+
+
+                form_name_label: "Your name *",
+                form_email_label: "Email *",
+                form_phone_label: "Phone number (optional)",
+                form_message_label: "Message",
+                form_submit_button: "Submit",
+                form_submission_message: "We ve received your inquiry and will be contacting you via email shortly."
+
+
+
+
             }
         },
         cz: {
@@ -64,30 +129,73 @@ i18next.use(initReactI18next).init({
                 mov_w: "S dlouholetými zkušenostmi v oboru jsme pomohli bezpočtu modelů dosáhnout finančního úspěchu a proměnili jejich tvrdou práci ve značné výdělky",
                 results: "Výsledky našich modelů",
                 results_d: "Kvůli vysoké diskrétnosti nezobrazujeme data našich modelů. Toto je příklad výpisu z účtu a minimální částka, kterou naše zkušené modelky vydělají",
+                faq_title: "Máte otázky?",
+                faq_subtitle: "Získejte odpovědi.",
+                faq_free: "Můžu vás zdarma zkontrolovat?",
+                faq_free_desc_1: "ANO! Za první období neúčtujeme provizi, teprve když začnete dobře vydělávat, o zisk se podělíme",
+                faq_free_desc_2: "Nevkládáte tedy žádné peníze",
+                faq_free_desc_3: "My jsme ti, kdo do vás na začátku investují.",
+                faq_how_to_start: "Jak začít?",
+                faq_how_to_start_desc_1: "To nás těší!",
+                faq_how_to_start_desc_2: "Než se rozhodneme s vámi spolupracovat, rádi bychom vás poznali. Jaká je vaše motivace, máte dost času a opravdu to chcete? Chceme vědět, jak vám můžeme co nejlépe pomoci.",
+                faq_how_to_start_desc_3: "K ověření všech těchto věcí máme bezplatnou úvodní konzultaci.",
+                faq_how_to_start_desc_4: "Stačí si rezervovat úvodní hovor a můžeme začít.",
+                faq_nude_photos: "Co když nechci ukazovat nahé fotky?",
+                faq_nude_photos_desc_1: "Je to vaše rozhodnutí, kam až chcete zajít.",
+                faq_nude_photos_desc_2: "Na začátku stačí obyčejné nebo erotické fotografie.",
+                faq_nude_photos_desc_3: "Fanoušci preferují exkluzivnější obsah, ale není to povinné.",
+                faq_what_we_offer: "Co vám můžeme nabídnout?",
+                faq_offer_strategy: "Virová strategie",
+                faq_offer_support: "24/7 podpora pro fanoušky",
+                faq_offer_management: "Správa účtu OnlyFans",
+                faq_offer_growth_strategy: "Strategie růstu účtu",
+                faq_offer_consulting: "Poradenství na sociálních sítích",
+                faq_offer_audit: "Týdenní audit účtu",
+                faq_offer_content: "Správa obsahu",
+                faq_offer_ai_crm: "Správa vztahů s fanoušky pomocí AI",
+                faq_offer_acquisition: "Získávání fanoušků",
+                faq_offer_creation_help: "Podpora při tvorbě obsahu",
+                faq_offer_academy: "Akademie OnlyFans",
+
+                contact_title: "Kontaktujte náš tým",
+                contact_intro_line1: "Chcete zvýšit své příjmy na OnlyFans?",
+                contact_intro_line2: "Vyplňte formulář níže,",
+                contact_intro_line3: "a jeden z našich expertů vás brzy kontaktuje.",
+                contact_intro_line4: "Jsme tu, abychom vám pomohli na každém kroku.",
+
+                contact_instagram_info: "Můžete napsat zprávu na Instagram nebo vyplnit dotazník",
+                contact_instagram_link: "https://www.instagram.com/onlyfanexperts/",
+                contact_flexible_agency: "Flexibilní agentura pro váš úspěch na OnlyFans",
+                contact_flexible_agency_desc_line1: "Naše agentura je zde, aby vám poskytla nástroje,",
+                contact_flexible_agency_desc_line2: "podporu a strategie pro růst vašeho účtu na OnlyFans.",
+                contact_flexible_agency_desc_line3: "Spolupracujeme s vámi na sdílení znalostí,",
+                contact_flexible_agency_desc_line4: "provádění přizpůsobených projektů",
+                contact_flexible_agency_desc_line5: "a odemknutí vašeho plného potenciálu výdělku.",
+
+                contact_enterprise_support: "Podpora na úrovni velkých podniků pro váš účet OnlyFans",
+                contact_enterprise_support_desc_line1: "Díky našemu odbornému týmu budete mít vše, co potřebujete k bezpečnému správě svého účtu,",
+                contact_enterprise_support_desc_line2: "rozšíření své fanouškovské základny a maximalizaci svého příjmu.",
+
+                contact_personalized_strategy: "Personalizovaná strategie pro váš úspěch",
+                contact_personalized_strategy_desc_line1: "Naši odborníci budou úzce spolupracovat s vámi",
+                contact_personalized_strategy_desc_line2: "aby vytvořili vlastní plán růstu, který vyhovuje vašim cílům",
+                contact_personalized_strategy_desc_line3: "poskytující kontinuální podporu",
+                contact_personalized_strategy_desc_line4: "a optimalizující vaše zkušenosti na OnlyFans"
+                ,
+                form_name_label: "Vaše jméno *",
+                form_email_label: "Email *",
+                form_phone_label: "Telefonní číslo (volitelné)",
+                form_message_label: "Zpráva",
+                form_submit_button: "Odeslat",
+                form_submission_message: "Obdrželi jsme váš dotaz a brzy vás budeme kontaktovat prostřednictvím e-mailu."
+
+
             }
         },
         de: {
             translation: {
                 findgirl: "Nach Standort suchen",
-                b2: "",
-                b3: "",
-                bk: "",
-                bs1: "",
-                bs2: "",
-                bs3: "",
-                jo: "",
-                k1: "",
-                k2: "",
-                k1_desc: "",
-                k2_desc: "",
-                k3: "",
-                k3_desc: "",
-                k4: "",
-                k4_desc: "",
-                k5: "",
-                k5_desc: "",
-                k6: "",
-                k6_desc: ""
+
             }
         },
         pl: {
@@ -117,10 +225,65 @@ i18next.use(initReactI18next).init({
                 mov_w: "Dzięki wieloletniemu doświadczeniu w branży pomogliśmy niezliczonej liczbie modelek osiągnąć sukces finansowy, zamieniając ich ciężką pracę w znaczne zarobki",
                 results: "Wyniki naszych modeli",
                 results_d: "Ze względu na dużą dyskrecję nie pokazujemy danych naszych modeli. To przykładowy wyciąg z konta i minimalna kwota, jaką zarabiają nasi doświadczeni modele",
-            }
+                faq_title: "Masz pytania?",
+                faq_subtitle: "Uzyskaj odpowiedzi.",
+                faq_free: "Czy mogę sprawdzić Cię za darmo?",
+                faq_free_desc_1: "TAK! Nie pobieramy prowizji za pierwszy okres, dopiero gdy zaczniesz dobrze zarabiać, podzielimy się zyskiem",
+                faq_free_desc_2: "Więc nie wkładasz żadnych pieniędzy",
+                faq_free_desc_3: "To my inwestujemy w Ciebie na początku.",
+                faq_nude_photos: "Co, jeśli nie chcę pokazywać nagich zdjęć?",
+                faq_nude_photos_desc_1: "To Twoja decyzja, jak daleko chcesz się posunąć.",
+                faq_nude_photos_desc_2: "Na początek wystarczą zdjęcia zwykłe lub erotyczne.",
+                faq_nude_photos_desc_3: "Fani preferują bardziej ekskluzywne treści, ale nie jest to wymagane.",
+                faq_what_we_offer: "Co możemy Ci zaoferować?",
+                faq_offer_strategy: "Strategia wiralowa",
+                faq_offer_support: "Wsparcie 24/7 dla fanów",
+                faq_offer_management: "Zarządzanie kontem OnlyFans",
+                faq_offer_growth_strategy: "Strategia wzrostu konta",
+                faq_offer_consulting: "Konsulting w mediach społecznościowych",
+                faq_offer_audit: "Audyt konta co tydzień",
+                faq_offer_content: "Zarządzanie treścią",
+                faq_offer_ai_crm: "Zarządzanie relacjami z fanami oparte na AI",
+                faq_offer_acquisition: "Pozyskiwanie fanów",
+                faq_offer_creation_help: "Wsparcie w tworzeniu treści",
+                faq_offer_academy: "Akademia OnlyFans",
+
+                contact_title: "Skontaktuj się z nami",
+                contact_intro_line1: "Chcesz zwiększyć swoje zarobki na OnlyFans?",
+                contact_intro_line2: "Wypełnij poniższy formularz,",
+                contact_intro_line3: "a jeden z naszych ekspertów skontaktuje się z Tobą wkrótce.",
+                contact_intro_line4: "Jesteśmy tu, aby pomóc Ci na każdym kroku.",
+
+                contact_instagram_info: "Możesz napisać wiadomość na Instagramie lub wypełnić ankietę",
+                contact_instagram_link: "https://www.instagram.com/onlyfanexperts/",
+                contact_flexible_agency: "Elastyczna agencja dla Twojego sukcesu na OnlyFans",
+                contact_flexible_agency_desc_line1: "Nasza agencja jest tutaj, aby zapewnić Ci narzędzia,",
+                contact_flexible_agency_desc_line2: "wsparcie i strategie do rozwoju Twojego konta na OnlyFans.",
+                contact_flexible_agency_desc_line3: "Współpracujemy z Tobą, aby dzielić się wiedzą,",
+                contact_flexible_agency_desc_line4: "realizować dostosowane projekty",
+                contact_flexible_agency_desc_line5: "i odblokować pełny potencjał zarobkowy."
+                ,
+                contact_enterprise_support: "Wsparcie na poziomie przedsiębiorstwa dla Twojego konta OnlyFans",
+                contact_enterprise_support_desc_line1: "Dzięki naszemu zespołowi ekspertów, będziesz miał wszystko, czego potrzebujesz, aby bezpiecznie zarządzać swoim kontem,",
+                contact_enterprise_support_desc_line2: "rozwinąć swoją bazę fanów i zmaksymalizować swoje dochody.",
+
+                contact_personalized_strategy: "Spersonalizowana strategia na sukces",
+                contact_personalized_strategy_desc_line1: " Nasi dedykowani eksperci będą ściśle współpracować z tobą",
+                contact_personalized_strategy_desc_line2: "aby stworzyć spersonalizowany plan wzrostu dopasowany do twoich celów",
+                contact_personalized_strategy_desc_line3: "zapewniając ciągłe wsparcie",
+                contact_personalized_strategy_desc_line4: "i optymalizując twoje doświadczenie na OnlyFans"
+                ,
+                form_name_label: "Twoje imię *",
+                form_email_label: "Email *",
+                form_phone_label: "Numer telefonu (opcjonalnie)",
+                form_message_label: "Wiadomość",
+                form_submit_button: "Wyślij",
+                form_submission_message: "Otrzymaliśmy Twoje zapytanie i wkrótce skontaktujemy się z Tobą za pośrednictwem e-maila."
+
             }
         }
-    },
+    }
+},
 );
 
 export default i18next;

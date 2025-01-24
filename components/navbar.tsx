@@ -19,7 +19,7 @@ interface NavbarProps {
   scrollToGraphicDesign: () => void;
   scrollToShopifyStores: () => void;
   scrollToBrands: () => void;
-  scrollToServices: () => void; // Define scrollToServices function
+  scrollToServices: () => void; 
 }
 
 const Navbar = ({
@@ -27,7 +27,7 @@ const Navbar = ({
   scrollToGraphicDesign,
   scrollToShopifyStores,
   scrollToBrands,
-  scrollToServices, // Add scrollToServices to props
+  scrollToServices, 
 }: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
@@ -62,23 +62,7 @@ const Navbar = ({
              bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          {/* <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website Design
-          </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
-          </div>
-
-          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Shopify Stores
-          </div>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
-          </div>
-
-          <Link href="/pricing" className="hover:text-gray-50">
-            Pricing
-          </Link> */}
+        
         </div>
 
         <div className="flex md:hidden">
@@ -116,12 +100,7 @@ const Navbar = ({
                   </div>
 
                 </div>
-                {/* <div>
-                  <div onClick={() => i18n.changeLanguage("de")} className="">
-                    <De className="flag" />
-                  </div>
-
-                </div> */}
+           
                 <div>
                   <div onClick={() => i18n.changeLanguage("pl")} className="">
                     <Pl className="flag" />

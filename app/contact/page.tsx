@@ -1,15 +1,11 @@
 "use client";
 
 import { useState } from "react";
-
 import { zodResolver } from "@hookform/resolvers/zod";
-
 import { useForm } from "react-hook-form";
-
 import * as z from "zod";
-
 import { Checkbox } from "@/components/ui/checkbox";
-
+import { useTranslation } from 'react-i18next';
 import {
   Select,
   SelectContent,
@@ -82,6 +78,7 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const { toast } = useToast();
+  const { t, i18n } = useTranslation();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(FormSchema),
@@ -134,7 +131,7 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our  team
+            {t('contact_title')}
           </div>
           <div
             className="
@@ -143,12 +140,11 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Ready to boost your OnlyFans earnings? <br />
-            Fill out the form below,<br />
-            and one of our experts will get in touch with you shortly. <br />
-            We re here to help you every step of the way.<br /><br />
-            You can write a message on Instagram or fill out a survey<br /><br />
-            <Link href="https://www.instagram.com/onlyfanexperts/" className="flex ">
+            {t('contact_intro_line1')}<br />
+            {t('contact_intro_line2')}<br />
+            {t('contact_intro_line3')}<br />
+            {t('contact_intro_line4')}<br />
+            <Link href="https://www.instagram.com/nerozza_modeling_agency" className="flex ">
               <img
                 src="/instagram.png"
                 height="50"
@@ -157,7 +153,7 @@ export default function ContactForm() {
                 alt="woman"
               />
               <div className="mt-2">
-                https://www.instagram.com/onlyfanexperts/
+                https://www.instagram.com/nerozza_modeling_agency/
               </div>
             </Link>
           </div>
@@ -165,19 +161,25 @@ export default function ContactForm() {
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                A Flexible Agency for Your OnlyFans Success<br />
-                Our agency is here to provide you with the tools,<br />
-                support, and strategies to grow your OnlyFans account. <br />
-                We collaborate with you to share knowledge,<br />
-                execute tailored projects, and unlock your full earning potential.
+                {t('contact_flexible_agency')}<br />
+                {t('contact_flexible_agency_desc_line1')}<br />
+                {t('contact_flexible_agency_desc_line2')} <br />
+                {t('contact_flexible_agency_desc_line3')}<br />
+                {t('contact_flexible_agency_desc_line4')}<br />
+                {t('contact_flexible_agency_desc_line5')}
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                Enterprise-Level Support for Your OnlyFans Account With our expert team,<br />
-                you’ll have everything you need to safely manage your account,<br />
-                grow your fanbase, and maximize your income.
+                {t('contact_enterprise_support')}<br />
+                <div>
+                  {t('contact_enterprise_support_desc_line1')}<br />
+                  {t('contact_enterprise_support_desc_line2')}
+                </div>
+
+                {t('contact_personalized_strategy')}<br />
+               
 
 
               </div>
@@ -185,10 +187,11 @@ export default function ContactForm() {
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-                Personalized Strategy to Build Your Success<br />
-                Our dedicated experts will work closely with you to create<br />
-                a custom growth plan that suits your goals, <br />
-                providing continuous support and optimizing your OnlyFans experience.
+               {t('contact_personalized_strategy')}<br />
+                {t('contact_personalized_strategy_desc_line1')}<br />
+                {t('contact_personalized_strategy_desc_line2')} <br />
+                {t('contact_personalized_strategy_desc_line3')}<br/>
+                {t('contact_personalized_strategy_desc_line4')}
               </div>
             </div>
           </div>
@@ -215,7 +218,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Your name *
+                        {t('form_name_label')} 
                       </FormLabel>
                       <FormControl>
                         <Input {...field} />
@@ -224,20 +227,7 @@ export default function ContactForm() {
                   )}
                 />
 
-                {/* <FormField
-                  control={form.control}
-                  name="last_name"
-                  render={({ field }) => (
-                    <FormItem className="items-center justify-center  w-full">
-                      <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Last name *
-                      </FormLabel>
-                      <FormControl>
-                        <Input {...field} />
-                      </FormControl>
-                    </FormItem>
-                  )}
-                /> */}
+
               </div>
 
               <FormField
@@ -261,7 +251,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Phone number (optional)
+                      {t('form_phone_label')}
                     </FormLabel>
                     <FormControl>
                       <Input {...field} />
@@ -270,74 +260,9 @@ export default function ContactForm() {
                 )}
               />
 
-              {/* <FormField
-                control={form.control}
-                name="services"
-                render={({ field }) => (
-                  <FormItem className="items-center justify-center w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                    Services you are interested in
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select an option" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <div className="flex gap-4">
-                          <SelectItem value="Mobile App Develoment">
-                          Mobile App Develoment
-                          </SelectItem>
-                        </div>
-                        <SelectItem value="Social Media Marketing">Social Media Marketing</SelectItem>
-                        <SelectItem value="51-200">51-200</SelectItem>
-                        <SelectItem value="501-1000">501-1000</SelectItem>
-                        <SelectItem value="1000+">1000+</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </FormItem>
-                )}
-              /> */}
 
-              {/* <FormField
-                control={form.control}
-                name="help"
-                render={({ field }) => (
-                  <FormItem className="items-center justify-center  w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      How can we help ?
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger
-                        
-                        
-                        >
-                          <SelectValue placeholder="Select an option" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <div className="flex gap-4">
-                          <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
-                          </SelectItem>
-                        </div>
-                        <SelectItem value="Learn More">Learn More</SelectItem>
-                        <SelectItem value="Get a Quote">Get a Quote</SelectItem>
 
-                        <SelectItem value="Other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </FormItem>
-                )}
-              /> */}
+
 
               <FormField
                 control={form.control}
@@ -345,7 +270,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Message
+                      {t('form_message_label')}
                     </FormLabel>
                     <FormControl>
                       <Textarea style={{ height: "100px" }} {...field} />
@@ -380,7 +305,7 @@ export default function ContactForm() {
                   disabled={loading}
                   onClick={() => form.handleSubmit(onSubmit)}
                 >
-                  Submit
+                  {t('form_submit_button')}
                 </Button>
               </div>
             </form>
@@ -406,8 +331,7 @@ export default function ContactForm() {
                   <PiSmiley className="text-6xl text-[#6c6684] mx-auto" />
 
                   <div className="text-gray-500 font-light  text-center justify-center mx-auto py-10">
-                    We&apos;ve received your inquiry and will be contacting you
-                    via email shortly.
+                   {t('form_submission_message')}
                   </div>
                 </div>
               </div>
